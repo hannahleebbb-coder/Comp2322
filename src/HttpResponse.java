@@ -36,7 +36,7 @@ public class HttpResponse {
         if (file != null && file.exists() && !isHead) {
             response.append("Content-Length: ").append(file.length()).append("\r\n");}
 
-        // Connection header based on keepAlive parameter
+       
         if (keepAlive) {
             response.append("Connection: keep-alive\r\n");
         } else {
