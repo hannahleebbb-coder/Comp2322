@@ -22,7 +22,7 @@ public class ClientHandler implements Runnable {
             HttpRequest request = new HttpRequest();
             if (!request.parse(input)) {
                 HttpResponse response = new HttpResponse(output);
-                response.send400(false); // non-persistent for bad requests
+                response.send400(false); 
                 return;}
 
             System.out.println("Request: " + request.getMethod() + " " + request.getUri());
